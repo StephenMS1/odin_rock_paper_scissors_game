@@ -98,7 +98,7 @@ function inputs() {
     userAnswer = userAnswer.toLowerCase()
     console.log(userAnswer)
     if (userAnswer != 'rock' && userAnswer != 'paper' && userAnswer != 'scissors') {
-        console.log("Not an acceptable answer");
+        alert("That isn't an option!");
         inputs();
     } else {
         game(computerAnswer, userAnswer);
