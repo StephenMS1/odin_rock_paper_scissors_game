@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="operation.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="operation.js" defer></script>
 </head>
 <body>
-    <h1 style="margin-left: 25vw;">Play Rock Paper Scissors via alerts!</h1>
+    <div class = "header">
+        <h1 style="margin-left: 25vw;">Rock Paper Scissors</h1>
+    </div>
+    
+    <div class="buttons">
+        <button id="rock"><img src='https://icon-library.com/images/rock-icon-png/rock-icon-png-18.jpg'></button>
+        <button id="paper"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///8AAADDw8OysrJHR0eGhobZ2dmjo6N/f3/c3NxMTEy4uLjLy8vHx8fCwsLp6ekrKyvz8/NRUVHT09Pi4uIeHh6ZmZlycnK8vLwZGRmsrKwKCgqhoaEWFhYuLi6SkpJlZWVdXV2wlrZMAAACZklEQVR4nO3a627TQBRF4YmbJpRcIGkCodzf/yUBtfVYggTTPfscE6313z7zaeRIE7sUIiIiIiIiIiIiIvr31t3GU7fZZdt+tZg5u8nm/cwKnAJxYxbmE7duYTqxswuziQHC2WoKwvfL1j3sJ0LsbGt4NdjFU/vbj66zPStDYSYxSJhIjBLOtu0njCtMOOvajxiVXbjMJtqFh/ueuGk/ZER24V2pxHX7KX8vQFjWqcQIYS4xRJhKjBEOjqH37SddLkiYSIwSDo7awcQw4eAkGkuMEw52cdF+2vkCheWUQowU5hBDhWXVE+/OXda8WGEGMVhYbsKJ0cJK/HBoP/NPhQvLQ7+LMcR44YD4pv3U30sQVuIxYhczhKX/7+YYsIspwkr86CfmCMun/hfVTkwSVuJbNzFLWN71RPPnDGnCSvzsJeYJK/GLlZgoLF9DiJnCSnQ+i3bh/PX56otwIzHu7drl5u0X8NRUhL6vGSYjvG2/gsd8wuVl0RUId8drF5bdt2sXjuxw9cIFQjGE/hCqIfSHUA2hP4RqCP0hVEPoD6EaQn8I1RD6Q6iG0B9CNYT+EKoh9IdQDaE/hGoI/SFUQ+gPoRpCfwjVEPpDqIbQH0I1hP4QqiH0h1ANoT+Eagj9IVRD6A+hGkJ/CNUQ+kOohtAfQjWE/hCqIfSHUA2hP4RqCP0hVEPoD6EaQn8I1RD6Q6iG0B9CNYT+EKoh9IdQDaE/hGoI/SFUQ+gPoRpCfwjVEPpDqPYkzA/hi9tmy55D+OIO2bLnTi5huc2mPba3AUtZfZ+nt18agURERERERERERET0P/cDchIqdyB4nYIAAAAASUVORK5CYII='></button>
+        <button id="scissors"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ72XQPaggEB73EvYolh6ETEeHTg0V_01k8A&usqp=CAU'></button>
+    </div>
+    <div id='results'>
+        <h2 class="score">SCORE:</h2>
+        <div class='human'>
+            <h2>Human</h2>
+            <h2 class="userScore">0</h2>
+            
+        </div>
+        <div class="computer">
+            <h2>Computer</h2>
+            <h2 class='computerScore'>0</h2>
+        </div>
+        
+    </div>
     
 </body>
 </html>
