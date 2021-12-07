@@ -26,9 +26,34 @@ function endOfGame() {
     } else {
         alert(`Better luck next time! The computer beat you ${computerWins} : ${humanWins}`);
     }
-    
+    const again = document.querySelector('label');
+
+    again.textContent = 'Click the button if you would like to play again';
+
+    const btn = document.createElement('button');
+
+    btn.style.height = '200px';
+    btn.style.width = '500px';
+    const human = document.querySelector('.human');
+
+
+
+    human.appendChild(btn);
+
+    btn.addEventListener('click', () => {
+        resetGame(again, human, btn);
+    });
+
 }
 
+
+
+function resetGame(again, human, btn) {
+    gameCounter = humanWins = computerWins = 0;
+    computerScore.textContent = humanScore.textContent = '0';
+    again.textContent = '';
+    human.removeChild(btn);
+}
 
 function game(computerAnswer, userAnswer) {
     if (computerAnswer == userAnswer) {
