@@ -1,4 +1,4 @@
 # odin_rock_paper_scissors_game
 
 # A basic iteration of Rock Paper Scissors
-# Currently running via alerts
+# Basic UI implemented with repeatability functionality.
